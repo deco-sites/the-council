@@ -1,7 +1,10 @@
-import Header from "deco-sites/fashion/components/header/Header.tsx";
-import type { Props } from "deco-sites/fashion/components/header/Header.tsx";
+import Header, {
+  HeaderProps,
+} from "deco-sites/the-council/components/Header.tsx";
 
-function HeaderSection(props: Props) {
+export type HeaderSection = HeaderProps;
+
+function HeaderSection(props: HeaderSection) {
   return <Header {...props} />;
 }
 
