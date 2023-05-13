@@ -9,8 +9,9 @@ import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/Head.tsx";
 import * as $$$$$$$$2 from "./sections/Header.tsx";
 import * as $$$$$$$$3 from "./sections/ListPerson.tsx";
-import * as $$$$$$$$4 from "./sections/TextArea.tsx";
-import * as $$$$$$$$5 from "./sections/TextGrid.tsx";
+import * as $$$$$$$$4 from "./sections/ListUser.tsx";
+import * as $$$$$$$$5 from "./sections/TextArea.tsx";
+import * as $$$$$$$$6 from "./sections/TextGrid.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -106,8 +107,9 @@ const manifest = {
     "deco-sites/the-council/sections/Head.tsx": $$$$$$$$1,
     "deco-sites/the-council/sections/Header.tsx": $$$$$$$$2,
     "deco-sites/the-council/sections/ListPerson.tsx": $$$$$$$$3,
-    "deco-sites/the-council/sections/TextArea.tsx": $$$$$$$$4,
-    "deco-sites/the-council/sections/TextGrid.tsx": $$$$$$$$5,
+    "deco-sites/the-council/sections/ListUser.tsx": $$$$$$$$4,
+    "deco-sites/the-council/sections/TextArea.tsx": $$$$$$$$5,
+    "deco-sites/the-council/sections/TextGrid.tsx": $$$$$$$$6,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i2$$$$$0,

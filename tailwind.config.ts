@@ -65,7 +65,7 @@ export default {
       },
 
       fontFamily: {
-        sans: ["Nunito Sans"],
+        sans: ["Nunito Sans", "sans-serif"],
         serif: ["inherit", "serif"],
         poppins: ["Poppins", "sans-serif"],
       },

@@ -1,7 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
-import Markdown from "./Markdown.tsx";
-
 export interface Person {
   image: LiveImage;
   name: string;
@@ -23,7 +21,7 @@ function CardPerson(
       </div>
 
       <div
-        class={"px-2 md:max-w-[200px] sm:w-[25%] md:relative z-1 -translate-y-5 md:translate-y-0 sm:-translate-y-5 md:w-full lg:h-auto sm:absolute h-full flex flex-col justify-center right-0 top-0 lg:block"}
+        class={"px-2 md:max-w-[200px] sm:w-[25%] md:relative z-1 -translate-y-6 md:translate-y-0 sm:-translate-y-5 md:w-full lg:h-auto sm:absolute h-full flex flex-col justify-center right-0 top-0 lg:block"}
       >
         <h3 className="text-base m-0 text-gray-800 font-poppins font-medium bottom-0 left-0 tracking-wider mb-2 md:-translate-y-5 sm:-translate-x-24 sm:whitespace-nowrap md:whitespace-normal md:translate-x-0 ">
           <p class={"bg-beige-100 inline px-1"}>

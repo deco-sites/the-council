@@ -11,8 +11,6 @@ function Markdown({ text, className }: Props) {
     "</p>",
   );
 
-  console.log(body);
-
   return (
     <div
       class={`${className}`}
