@@ -5,7 +5,6 @@ function GlobalTags() {
     <Head>
       {/* Tailwind v3 CSS file */}
 
-
       {/* Icons */}
       <link
         rel="icon"

@@ -1,8 +1,8 @@
 import Header, {
-  HeaderProps,
-} from "deco-sites/the-council/components/Header.tsx";
+  FooterProps,
+} from "deco-sites/the-council/components/header/Header.tsx";
 
-export type HeaderSection = HeaderProps;
+export type HeaderSection = FooterProps;
 
 function HeaderSection(props: HeaderSection) {
   return <Header {...props} />;

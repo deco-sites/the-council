@@ -6,8 +6,9 @@
 
 @layer base {
   /* Allow changing font family via CMS */
-  html {
-    font-family: var(--font-family);
+
+  strong {
+    font-weight: bold;
   }
 
   body {
