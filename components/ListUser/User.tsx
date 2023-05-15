@@ -11,7 +11,7 @@ export default function User({ description, name, image }: UserProps) {
   return (
     <div class={"w-full"}>
       <img
-        class={"mb-[6%] object-cover block object-[50% 50%]"}
+        class={"mb-[6%] object-cover block object-[50% 50%] w-full cursor-grap"}
         src={image.url}
         alt={image.description}
       />

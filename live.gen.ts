@@ -5,13 +5,15 @@
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/SliderJs.tsx";
 import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/Head.tsx";
 import * as $$$$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$$$3 from "./sections/ListPerson.tsx";
-import * as $$$$$$$$4 from "./sections/ListUser.tsx";
-import * as $$$$$$$$5 from "./sections/TextArea.tsx";
-import * as $$$$$$$$6 from "./sections/TextGrid.tsx";
+import * as $$$$$$$$3 from "./sections/Investors.tsx";
+import * as $$$$$$$$4 from "./sections/ListPerson.tsx";
+import * as $$$$$$$$5 from "./sections/ListUser.tsx";
+import * as $$$$$$$$6 from "./sections/TextArea.tsx";
+import * as $$$$$$$$7 from "./sections/TextGrid.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -90,6 +92,9 @@ const manifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/live/workbench.ts": $live_workbench,
   },
+  "islands": {
+    "./islands/SliderJs.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
@@ -106,10 +111,11 @@ const manifest = {
     "deco-sites/the-council/sections/Footer.tsx": $$$$$$$$0,
     "deco-sites/the-council/sections/Head.tsx": $$$$$$$$1,
     "deco-sites/the-council/sections/Header.tsx": $$$$$$$$2,
-    "deco-sites/the-council/sections/ListPerson.tsx": $$$$$$$$3,
-    "deco-sites/the-council/sections/ListUser.tsx": $$$$$$$$4,
-    "deco-sites/the-council/sections/TextArea.tsx": $$$$$$$$5,
-    "deco-sites/the-council/sections/TextGrid.tsx": $$$$$$$$6,
+    "deco-sites/the-council/sections/Investors.tsx": $$$$$$$$3,
+    "deco-sites/the-council/sections/ListPerson.tsx": $$$$$$$$4,
+    "deco-sites/the-council/sections/ListUser.tsx": $$$$$$$$5,
+    "deco-sites/the-council/sections/TextArea.tsx": $$$$$$$$6,
+    "deco-sites/the-council/sections/TextGrid.tsx": $$$$$$$$7,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i2$$$$$0,
@@ -169,7 +175,6 @@ const manifest = {
     "deco-sites/std/loaders/vtexLegacyProductDetailsPage.ts": i2$$$0,
     "deco-sites/std/loaders/vtexLegacyRelatedProductsLoader.ts": i2$$$1,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };

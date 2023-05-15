@@ -21,7 +21,7 @@ function Header({ logo, nav }: FooterProps) {
         <div
           class={"text-beige-100 max-w-[1400px] w-full mx-auto flex justify-between items-center "}
         >
-          <img class={"h-[50px]"} src={logo} />
+          <img class={"h-[30px] sm:h-[50px]"} src={logo} />
           <div class={"flex items-center gap-7"}>
             {nav?.length && <HeaderNav nav={nav} />}
             <ButtonLink text="Invest in The Council" url="/lp-interest" />

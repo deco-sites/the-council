@@ -40,6 +40,7 @@
               "deco-sites/std/accounts/yourViews.ts",
               "deco-sites/std/loaders/vtexLegacyProductDetailsPage.ts",
               "deco-sites/std/loaders/vtexLegacyRelatedProductsLoader.ts",
+              "./islands/SliderJs.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -61,6 +62,7 @@
               "deco-sites/the-council/sections/Footer.tsx",
               "deco-sites/the-council/sections/Head.tsx",
               "deco-sites/the-council/sections/Header.tsx",
+              "deco-sites/the-council/sections/Investors.tsx",
               "deco-sites/the-council/sections/ListPerson.tsx",
               "deco-sites/the-council/sections/ListUser.tsx",
               "deco-sites/the-council/sections/TextArea.tsx",
@@ -3272,6 +3274,24 @@
       ],
       "title": "deco-sites/the-council/components/header/Header.tsx@FooterProps"
     },
+    "ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JbnZlc3RvcnMudHN4@InvestorsProps": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "footerText": {
+          "type": "string",
+          "title": "Footer Text"
+        }
+      },
+      "required": [
+        "title",
+        "footerText"
+      ],
+      "title": "deco-sites/the-council/sections/Investors.tsx@InvestorsProps"
+    },
     "ZGVjby1zaXRlcy90aGUtY291bmNpbC9jb21wb25lbnRzL0xpc3RQZXJzb24vQ2FyZFBlcnNvbi50c3g=@Person": {
       "type": "object",
       "properties": {
@@ -4255,6 +4275,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1NsaWRlckpzLnRzeA==": {
+      "title": "./islands/SliderJs.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/SliderJs.tsx"
+          ],
+          "default": "./islands/SliderJs.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
       "title": "$live/handlers/devPage.ts",
       "type": "object",
@@ -4696,6 +4732,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JbnZlc3RvcnMudHN4": {
+      "title": "deco-sites/the-council/sections/Investors.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JbnZlc3RvcnMudHN4@InvestorsProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/the-council/sections/Investors.tsx"
+          ],
+          "default": "deco-sites/the-council/sections/Investors.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9MaXN0UGVyc29uLnRzeA==": {
       "title": "deco-sites/the-council/sections/ListPerson.tsx",
       "type": "object",
@@ -5128,6 +5185,17 @@
         }
       ]
     },
+    "islands": {
+      "title": "islands",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpzLnRzeA=="
+        }
+      ]
+    },
     "handlers": {
       "title": "handlers",
       "anyOf": [
@@ -5212,6 +5280,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JbnZlc3RvcnMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9MaXN0UGVyc29uLnRzeA=="
@@ -5320,6 +5391,9 @@
           },
           {
             "$ref": "#/root/loaders"
+          },
+          {
+            "$ref": "#/root/islands"
           },
           {
             "$ref": "#/root/handlers"

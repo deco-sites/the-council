@@ -55,6 +55,10 @@ export default {
         1: "0.3rem",
       },
 
+      height: {
+        "user": "calc(100% - 121px - 6%)",
+      },
+
       screens: {
         sm: { min: "488px" },
         md: { min: "767px" },
