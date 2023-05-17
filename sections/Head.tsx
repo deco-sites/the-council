@@ -33,7 +33,6 @@ export default function HeadComponent({
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={imageUrl} />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
