@@ -39,11 +39,7 @@ export default function HeadComponent({
         href="https://fonts.gstatic.com"
         crossOrigin={url}
       />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-      >
-      </link>
+
       <link
         rel="shortcut icon"
         type="image/x-icon"
@@ -80,6 +76,11 @@ export default function HeadComponent({
         <link rel="stylesheet" href={asset(styleUrl)}></link>
       ))}
       <link href={asset("/tailwind.css")} rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      >
+      </link>
       <style
         dangerouslySetInnerHTML={{
           __html: `/**
