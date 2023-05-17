@@ -18,7 +18,7 @@ export default function TextGrid({ listText }: TextGridProps) {
         {listText?.map((text) => (
           <div class="flex md:flex-row flex-col justify-between items-start  pb-10 last:border-none last:mb-0 border-b-gray-800 border-b w-full mb-10 ">
             <h3
-              class={"font-bold md:text-[40px] text-3xl md:leading-[52px] md:mb-0 mb-8"}
+              class={"font-bold md:text-[40px] font-sans text-3xl md:leading-[52px] md:mb-0 mb-8"}
             >
               {text.title}
             </h3>

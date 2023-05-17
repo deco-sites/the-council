@@ -35,6 +35,13 @@ export default {
       maxWidth: {
         "4xl": "986px",
       },
+      padding: {
+        "2vw": "2.5vw",
+        "4vw": "4vw",
+        "3vwMax": "3.3vmax",
+        "6vwMax": "6.6vmax",
+        "6vw": "6vw",
+      },
 
       keyframes: {
         "in-between": {
@@ -63,10 +70,6 @@ export default {
       animation: {
         "in-between": "in-between 1s ease-in-out forwards",
         "menu": "menu 300ms ease-in-out forwards",
-      },
-
-      padding: {
-        1: "0.3rem",
       },
 
       height: {

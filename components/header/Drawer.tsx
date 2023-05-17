@@ -68,7 +68,7 @@ export default function Drawer({ nav }: DrawerProps) {
                 })}
               </div>
               <button
-                class={`max-w-[284px] w-full min-h-[75px] mb-[6vw] flex justify-center items-center bg-orange-200 hover:opacity-80 transition outline-none`}
+                class={`max-w-[284px] w-full min-h-[75px] mb-6vw flex justify-center items-center bg-orange-200 hover:opacity-80 transition outline-none`}
               >
                 <a
                   class={`text-white font-medium font-poppins text-xl`}

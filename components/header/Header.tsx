@@ -17,7 +17,7 @@ function Header({ logo, nav }: FooterProps) {
       class={"h-[82px] md:h-[151px] w-full mb-5 md:mb-14 z-10 relative"}
     >
       <div
-        class={"w-full fixed md:py-[2.5vw] md:px-[4vw] p-[6vw] left-0 top-0 bg-beige-100"}
+        class={"w-full fixed md:py-2vw md:px-4vw p-6vw left-0 top-0 bg-beige-100"}
       >
         <div
           class={"text-beige-100 max-w-[1400px] w-full mx-auto flex justify-between items-center"}

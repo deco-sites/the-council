@@ -9,7 +9,7 @@ export interface FooterProps {
 function Footer({ nav, email }: FooterProps) {
   return (
     <footer
-      class={"h-[151px] w-full mb-14 py-7 lg:px-0 px-[3.3vmax]"}
+      class={"h-[151px] w-full mb-14 py-7 lg:px-0 px-3vwMax"}
     >
       <div
         class={"flex items-center justify-center w-full flex-wrap gap-3 mb-8 lg:px-0 px-[17px]"}

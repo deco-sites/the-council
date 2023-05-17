@@ -13,10 +13,11 @@ export interface Props {
 }
 
 export default function HeadComponent({
-  title = "deco.cx — starter site",
+  title = "The Council",
   description = "Deliver complete commerce experiences — start here!",
-  url = "https://start.deco.site",
-  imageUrl = "https://deco.cx/images/deco-logo-light.png",
+  url = "https://thecouncil.deco.site/",
+  imageUrl =
+    "http://static1.squarespace.com/static/5ea9c0a303027956afb59766/t/62f6b09924060d320528e3f9/1660334233676/The+Council_Wordmark_Charcoal.png?format=1500w",
   faviconUrl = "",
   styleUrls = [],
   themeColor = "#003232",
@@ -24,6 +25,7 @@ export default function HeadComponent({
   return (
     <Head>
       <title>{title}</title>
+
       <meta name="theme-color" content={themeColor}></meta>
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
@@ -31,13 +33,43 @@ export default function HeadComponent({
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={imageUrl} />
-      <link rel="shortcut icon" href={faviconUrl} type="image/x-icon"></link>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin={url}
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      >
+      </link>
+      <link
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/5ea9c0a303027956afb59766/1592925880915-J4J48TEWS8USUCKHZT6W/favicon.ico?format=100w"
+      >
+      </link>
 
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="https://images.squarespace-cdn.com/content/v1/5ea9c0a303027956afb59766/1592925880915-J4J48TEWS8USUCKHZT6W/favicon.ico?format=100w"
+      >
       </link>
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="https://images.squarespace-cdn.com/content/v1/5ea9c0a303027956afb59766/1592925880915-J4J48TEWS8USUCKHZT6W/favicon.ico?format=100w"
+      >
       </link>
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="https://images.squarespace-cdn.com/content/v1/5ea9c0a303027956afb59766/1592925880915-J4J48TEWS8USUCKHZT6W/favicon.ico?format=100w"
+      >
       </link>
       <link rel="manifest" href="/site.webmanifest"></link>
       <link rel="mask-icon" href="/safari-pinned-tab.svg" data-color="#003232">
@@ -52,91 +84,86 @@ export default function HeadComponent({
         dangerouslySetInnerHTML={{
           __html: `/**
         
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 200;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2)
-             format("woff2");
-        
-         }
-         /* latin */
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 300;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2)
-             format("woff2");
-         
-         }
-         /* cyrillic-ext */
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 400;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
-             format("woff2");
-         }
-         /* cyrillic-ext */
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 500;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
-             format("woff2");
-         }
-         
-         /* cyrillic-ext */
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 600;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
-             format("woff2");
-         }
-         
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 700;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
-             format("woff2");
-         }
-         
-         /* cyrillic-ext */
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 800;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
-             format("woff2");
-         }
-         
-         /* cyrillic-ext */
-         @font-face {
-           font-family: "Nunito Sans";
-           font-style: normal;
-           font-weight: 900;
-           font-stretch: 100%;
-           font-display: swap;
-           src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
-             format("woff2");
-           unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-         }
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 200;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t4R-tCKQ.woff2)
+            format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 800;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          
+          @font-face {
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 900;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
          
          /* latin */
          @font-face {

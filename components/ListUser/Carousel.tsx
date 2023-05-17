@@ -100,7 +100,7 @@ function UserCarousel({ users }: Props) {
   return (
     <div
       id={"user-carousel"}
-      class="w-full px-[4vw] cursor-grab"
+      class="w-full px-4vw cursor-grab"
     >
       <div class={"relative"}>
         <Slider
