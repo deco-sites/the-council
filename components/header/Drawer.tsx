@@ -2,7 +2,7 @@ import ButtonDrawer from "./ButtonDrawer.tsx";
 import { useUI } from "../../sdk/useUI.ts";
 import Modal from "../ui/Modal.tsx";
 import { NavProps } from "./HeaderNav.tsx";
-import ButtonLink from "./ButtonLink.tsx";
+import Arrow from "./Arrow.tsx";
 
 interface DrawerProps {
   nav: NavProps[];
@@ -48,7 +48,7 @@ export default function Drawer({ nav }: DrawerProps) {
             <div
               class={`h-full  w-full overflow-y-scroll flex flex-col items-center justify-between transition duration-1000 ${
                 displayMenu.value !== "initial" &&
-                "transform translate-x-[-100%] absolute"
+                "transform translate-x-[-100%]"
               }`}
             >
               <div
@@ -58,9 +58,11 @@ export default function Drawer({ nav }: DrawerProps) {
                   return (
                     <div
                       onClick={() => handleMenu(item.text)}
-                      class={"text-[6.6vmin] text-white font-medium font-poppins mt-[3vw] mx-[5vw] cursor-pointer"}
+                      class={"text-[6.6vmin] text-white font-medium font-poppins mt-[3vw] mx-[5vw] cursor-pointer flex items-center"}
                     >
                       {item.text}
+
+                      <Arrow className="w-[35px] h-[35px] fill-white  ml-[2px]" />
                     </div>
                   );
                 })}
@@ -79,7 +81,7 @@ export default function Drawer({ nav }: DrawerProps) {
             {nav.map((item) => {
               return (
                 <div
-                  class={`transition duration-1000 w-full h-full overflow-y-scroll flex flex-col items-center absolute justify-center ${
+                  class={`transition duration-1000 w-full h-full overflow-y-scroll flex flex-col items-center absolute top-0 z-1 bg-gray-800 justify-center ${
                     displayMenu.value === item.text
                       ? "translate-x-0"
                       : "translate-x-full"
@@ -87,8 +89,12 @@ export default function Drawer({ nav }: DrawerProps) {
                 >
                   <div
                     onClick={() => handleMenu("initial")}
-                    class={`text-[6.6vmin] text-gray-600 font-medium font-poppins mt-[3vw] mx-[5vw] cursor-pointer`}
+                    class={`text-[6.6vmin] text-gray-600 font-medium font-poppins mt-[3vw] mx-[5vw] cursor-pointer flex items-center`}
                   >
+                    <Arrow
+                      className="w-[35px] h-[35px] fill-gray-600 mr-[2px]"
+                      type="left"
+                    />
                     Back
                   </div>
                   {item?.children?.map((child) => (
