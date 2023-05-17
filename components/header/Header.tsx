@@ -4,6 +4,7 @@ import HeaderNav, {
   NavProps,
 } from "deco-sites/the-council/components/header/HeaderNav.tsx";
 import ButtonLink from "deco-sites/the-council/components/header/ButtonLink.tsx";
+import Drawer from "../../islands/Drawer.tsx";
 
 export interface FooterProps {
   logo: LiveImage;
@@ -19,10 +20,12 @@ function Header({ logo, nav }: FooterProps) {
         class={"w-full fixed py-[2.5vw] px-[4vw] left-0 top-0 bg-beige-100"}
       >
         <div
-          class={"text-beige-100 max-w-[1400px] w-full mx-auto flex justify-between items-center "}
+          class={"text-beige-100 max-w-[1400px] w-full mx-auto flex justify-between items-center"}
         >
           <img class={"h-[30px] sm:h-[50px]"} src={logo} />
-          <div class={"flex items-center gap-7"}>
+
+          <Drawer nav={nav ?? []} />
+          <div class={"hidden md:flex items-center gap-7"}>
             {nav?.length && <HeaderNav nav={nav} />}
             <ButtonLink text="Invest in The Council" url="/lp-interest" />
           </div>

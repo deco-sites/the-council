@@ -2,6 +2,7 @@
 export const theme = {
   gray: {
     "800": "#323231",
+    "600": "#999998",
   },
   orange: {
     "200": "#E48653",
@@ -15,27 +16,10 @@ export const theme = {
 export default {
   content: ["./**/*.tsx"],
   theme: {
-    keyframes: {
-      "in-between": {
-        "0%": {
-          opacity: "0",
-          transform: "translateY(35px)",
-        },
-
-        "100%": {
-          opacity: "1",
-          transform: "translateY(0px)",
-        },
-      },
-    },
-
-    animation: {
-      "in-between": "in-between 1s ease-in-out forwards",
-    },
-
     colors: {
       gray: {
         "800": "#323231",
+        "600": "#999998",
       },
       orange: {
         "200": "#E48653",
@@ -51,6 +35,36 @@ export default {
       maxWidth: {
         "4xl": "986px",
       },
+
+      keyframes: {
+        "in-between": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(35px)",
+          },
+
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
+
+        "menu": {
+          "0%": {
+            opacity: "0",
+          },
+
+          "100%": {
+            opacity: "1",
+          },
+        },
+      },
+
+      animation: {
+        "in-between": "in-between 1s ease-in-out forwards",
+        "menu": "menu 300ms ease-in-out forwards",
+      },
+
       padding: {
         1: "0.3rem",
       },

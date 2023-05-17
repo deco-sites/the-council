@@ -5,14 +5,12 @@
 
 import { signal } from "@preact/signals";
 
-const displayCart = signal(false);
-const displayMenu = signal(false);
-const displaySearchbar = signal(false);
+const displayDrawer = signal(false);
+const displayMenu = signal("initial");
 
 const state = {
-  displayCart,
+  displayDrawer,
   displayMenu,
-  displaySearchbar,
 };
 
 export const useUI = () => state;

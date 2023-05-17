@@ -1,12 +1,12 @@
 interface RenderIframeProps {
   iframe: string;
-  style?: string;
+  className?: string;
 }
 
-export default function RenderIframe({ iframe, style }: RenderIframeProps) {
+export default function RenderIframe({ iframe, className }: RenderIframeProps) {
   return (
     <iframe
-      class={`w-full h-full ${style && style}`}
+      class={`w-full ${className && className}`}
       allow="autoplay; fullscreen"
       src={iframe}
     >

@@ -14,7 +14,7 @@ export default function TextArea({ textTitle, listText }: TextAreaProps) {
         class={"w-full lg:px-0 sm:max-w-[70%] mx-auto mb-[calc(30vmax / 10)] mb-16 "}
       >
         <Markdown
-          className="mx-0 w-full markdown-body text-gray-800 font-sans text-3xl lg:text-[2.5rem] leading-[37px] lg:leading-[3rem] tracking-normal mt-0 m-8 font-bold"
+          className="mx-0 w-full markdown-body text-gray-800 font-sans text-3xl lg:text-[2.5rem] leading-[37px] lg:leading-[3rem] tracking-normal mt-0 m-8 font-bold "
           text={textTitle}
         />
         {listText?.length && listText.map((text) => {

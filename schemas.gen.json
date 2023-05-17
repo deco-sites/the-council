@@ -40,6 +40,7 @@
               "deco-sites/std/accounts/yourViews.ts",
               "deco-sites/std/loaders/vtexLegacyProductDetailsPage.ts",
               "deco-sites/std/loaders/vtexLegacyRelatedProductsLoader.ts",
+              "./islands/Drawer.tsx",
               "./islands/SliderJs.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
@@ -62,6 +63,7 @@
               "deco-sites/the-council/sections/Footer.tsx",
               "deco-sites/the-council/sections/Head.tsx",
               "deco-sites/the-council/sections/Header.tsx",
+              "deco-sites/the-council/sections/Iframe.tsx",
               "deco-sites/the-council/sections/Investors.tsx",
               "deco-sites/the-council/sections/ListPerson.tsx",
               "deco-sites/the-council/sections/ListUser.tsx",
@@ -3274,6 +3276,19 @@
       ],
       "title": "deco-sites/the-council/components/header/Header.tsx@FooterProps"
     },
+    "ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JZnJhbWUudHN4@IframeProps": {
+      "type": "object",
+      "properties": {
+        "iframe": {
+          "type": "string",
+          "title": "Iframe"
+        }
+      },
+      "required": [
+        "iframe"
+      ],
+      "title": "deco-sites/the-council/sections/Iframe.tsx@IframeProps"
+    },
     "ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JbnZlc3RvcnMudHN4@InvestorsProps": {
       "type": "object",
       "properties": {
@@ -3284,11 +3299,37 @@
         "footerText": {
           "type": "string",
           "title": "Footer Text"
+        },
+        "linkButton": {
+          "type": "object",
+          "properties": {
+            "openNewTab": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Open New Tab"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            },
+            "text": {
+              "type": "string",
+              "title": "Text"
+            }
+          },
+          "required": [
+            "url",
+            "text"
+          ],
+          "title": "Link Button"
         }
       },
       "required": [
         "title",
-        "footerText"
+        "footerText",
+        "linkButton"
       ],
       "title": "deco-sites/the-council/sections/Investors.tsx@InvestorsProps"
     },
@@ -4275,6 +4316,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0RyYXdlci50c3g=": {
+      "title": "./islands/Drawer.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Drawer.tsx"
+          ],
+          "default": "./islands/Drawer.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1NsaWRlckpzLnRzeA==": {
       "title": "./islands/SliderJs.tsx",
       "type": "object",
@@ -4729,6 +4786,27 @@
             "deco-sites/the-council/sections/Header.tsx"
           ],
           "default": "deco-sites/the-council/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JZnJhbWUudHN4": {
+      "title": "deco-sites/the-council/sections/Iframe.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JZnJhbWUudHN4@IframeProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/the-council/sections/Iframe.tsx"
+          ],
+          "default": "deco-sites/the-council/sections/Iframe.tsx"
         }
       }
     },
@@ -5192,6 +5270,9 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0RyYXdlci50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpzLnRzeA=="
         }
       ]
@@ -5280,6 +5361,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JZnJhbWUudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aGUtY291bmNpbC9zZWN0aW9ucy9JbnZlc3RvcnMudHN4"

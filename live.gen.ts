@@ -5,15 +5,17 @@
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/SliderJs.tsx";
-import * as $$$$$$$$0 from "./sections/Footer.tsx";
-import * as $$$$$$$$1 from "./sections/Head.tsx";
-import * as $$$$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$$$3 from "./sections/Investors.tsx";
-import * as $$$$$$$$4 from "./sections/ListPerson.tsx";
-import * as $$$$$$$$5 from "./sections/ListUser.tsx";
-import * as $$$$$$$$6 from "./sections/TextArea.tsx";
-import * as $$$$$$$$7 from "./sections/TextGrid.tsx";
+import * as $$$$$0 from "./islands/Drawer.tsx";
+import * as $$$$$1 from "./islands/SliderJs.tsx";
+import * as $$$$$$$$0 from "./sections/TextArea.tsx";
+import * as $$$$$$$$1 from "./sections/Investors.tsx";
+import * as $$$$$$$$2 from "./sections/ListPerson.tsx";
+import * as $$$$$$$$3 from "./sections/Footer.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/TextGrid.tsx";
+import * as $$$$$$$$6 from "./sections/Head.tsx";
+import * as $$$$$$$$7 from "./sections/ListUser.tsx";
+import * as $$$$$$$$8 from "./sections/Iframe.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -93,7 +95,8 @@ const manifest = {
     "./routes/live/workbench.ts": $live_workbench,
   },
   "islands": {
-    "./islands/SliderJs.tsx": $$$$$0,
+    "./islands/Drawer.tsx": $$$$$0,
+    "./islands/SliderJs.tsx": $$$$$1,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
@@ -108,14 +111,15 @@ const manifest = {
     "deco-sites/std/sections/SEO.tsx": i2$$$$9,
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$10,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$11,
-    "deco-sites/the-council/sections/Footer.tsx": $$$$$$$$0,
-    "deco-sites/the-council/sections/Head.tsx": $$$$$$$$1,
-    "deco-sites/the-council/sections/Header.tsx": $$$$$$$$2,
-    "deco-sites/the-council/sections/Investors.tsx": $$$$$$$$3,
-    "deco-sites/the-council/sections/ListPerson.tsx": $$$$$$$$4,
-    "deco-sites/the-council/sections/ListUser.tsx": $$$$$$$$5,
-    "deco-sites/the-council/sections/TextArea.tsx": $$$$$$$$6,
-    "deco-sites/the-council/sections/TextGrid.tsx": $$$$$$$$7,
+    "deco-sites/the-council/sections/Footer.tsx": $$$$$$$$3,
+    "deco-sites/the-council/sections/Head.tsx": $$$$$$$$6,
+    "deco-sites/the-council/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/the-council/sections/Iframe.tsx": $$$$$$$$8,
+    "deco-sites/the-council/sections/Investors.tsx": $$$$$$$$1,
+    "deco-sites/the-council/sections/ListPerson.tsx": $$$$$$$$2,
+    "deco-sites/the-council/sections/ListUser.tsx": $$$$$$$$7,
+    "deco-sites/the-council/sections/TextArea.tsx": $$$$$$$$0,
+    "deco-sites/the-council/sections/TextGrid.tsx": $$$$$$$$5,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i2$$$$$0,
