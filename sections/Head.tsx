@@ -14,7 +14,7 @@ export interface Props {
 
 export default function HeadComponent({
   title = "The Council",
-  description = "Deliver complete commerce experiences — start here!",
+  description = "We know that the specialists and the generalists who come in and up-level everything around them are the backbone of any successful company.",
   url = "https://thecouncil.deco.site/",
   imageUrl =
     "http://static1.squarespace.com/static/5ea9c0a303027956afb59766/t/62f6b09924060d320528e3f9/1660334233676/The+Council_Wordmark_Charcoal.png?format=1500w",
